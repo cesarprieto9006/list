@@ -1,12 +1,23 @@
 package com.example.list.screens.main
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.databinding.DataBindingUtil
+import androidx.lifecycle.ViewModelProviders
 import com.example.list.R
+import com.example.list.databinding.ActivityMainBinding
+import com.example.list.screens.BaseActivity
+import com.example.list.screens.viewmodel.MainViewModel
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+
+        val binding: ActivityMainBinding =
+            DataBindingUtil.setContentView(this, R.layout.activity_main)
+
+        val viewModel: MainViewModel =
+            ViewModelProviders.of(this, viewModelFactory).get(MainViewModel::class.java)
+        setBaseViewModel(viewModel)
+
     }
 }

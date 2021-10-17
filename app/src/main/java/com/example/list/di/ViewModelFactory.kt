@@ -1,5 +1,3 @@
-@file:Suppress("UNCHECKED_CAST")
-
 package com.example.list.di
 
 import androidx.lifecycle.ViewModel

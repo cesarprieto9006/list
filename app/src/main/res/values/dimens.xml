@@ -1,0 +1,119 @@
+<resources>
+    <dimen name="border_xs">1dp</dimen>
+
+    <dimen name="font_heading_1">30sp</dimen>
+    <dimen name="font_heading_2">25sp</dimen>
+    <dimen name="font_heading_3">20sp</dimen>
+    <dimen name="font_heading_4">15sp</dimen>
+    <dimen name="font_heading_5">13sp</dimen>
+    <dimen name="font_heading_7">14sp</dimen>
+
+    <dimen name="font_text_form_title">16sp</dimen>
+    <dimen name="btn_error_text_size">14sp</dimen>
+
+    <dimen name="margin_top_text_form_title">31.1dp</dimen>
+    <dimen name="margin_bottom_text_form_title">6.9dp</dimen>
+    <dimen name="margin_start_text_form_title">32.4dp</dimen>
+    <dimen name="margin_start_btn_primary">46dp</dimen>
+    <dimen name="margin_end_btn_primary">50dp</dimen>
+    <dimen name="margin_horizontal_btn_primary_error">24dp</dimen>
+
+    <dimen name="margin_top_btn_alert">26.4dp</dimen>
+    <dimen name="margin_32">32dp</dimen>
+
+    <dimen name="eighty_percent">0.88</dimen>
+    <dimen name="seventy_percent">0.85</dimen>
+
+
+    <dimen name="dp_minus4">-4dp</dimen>
+
+
+    <dimen name="dp_0">0dp</dimen>
+    <dimen name="dp_1">1dp</dimen>
+    <dimen name="dp_2">2dp</dimen>
+    <dimen name="dp_4">4dp</dimen>
+    <dimen name="dp_5">5dp</dimen>
+    <dimen name="dp_5_5">5.5dp</dimen>
+    <dimen name="dp_6">6dp</dimen>
+    <dimen name="dp_7">7dp</dimen>
+    <dimen name="dp_8">8dp</dimen>
+    <dimen name="dp_10">10dp</dimen>
+    <dimen name="dp_11_5">11.5dp</dimen>
+    <dimen name="dp_12">12dp</dimen>
+    <dimen name="dp_13">13dp</dimen>
+    <dimen name="dp_14">14dp</dimen>
+    <dimen name="dp_15">15dp</dimen>
+    <dimen name="dp_15_6">15.6dp</dimen>
+    <dimen name="dp_16">16dp</dimen>
+    <dimen name="dp_16_4">16.4dp</dimen>
+    <dimen name="dp_18">18dp</dimen>
+    <dimen name="dp_19">19dp</dimen>
+    <dimen name="dp_20">20dp</dimen>
+    <dimen name="dp_22">22dp</dimen>
+    <dimen name="dp_24">24dp</dimen>
+    <dimen name="dp_26">26dp</dimen>
+    <dimen name="dp_28">28dp</dimen>
+    <dimen name="dp_28_9">28.9dp</dimen>
+    <dimen name="dp_30">30dp</dimen>
+    <dimen name="dp_32">32dp</dimen>
+    <dimen name="dp_33">33dp</dimen>
+    <dimen name="dp_35">35dp</dimen>
+    <dimen name="dp_40">40dp</dimen>
+    <dimen name="dp_44">44dp</dimen>
+    <dimen name="dp_45">45dp</dimen>
+    <dimen name="dp_48">48dp</dimen>
+    <dimen name="dp_50">50dp</dimen>
+    <dimen name="dp_52">52dp</dimen>
+    <dimen name="dp_53_5">53.5dp</dimen>
+    <dimen name="dp_56">56dp</dimen>
+    <dimen name="dp_64">64dp</dimen>
+    <dimen name="dp_70">70dp</dimen>
+    <dimen name="dp_74">74dp</dimen>
+    <dimen name="dp_80">80dp</dimen>
+    <dimen name="dp_88">88dp</dimen>
+    <dimen name="dp_128">128dp</dimen>
+    <dimen name="dp_140">140dp</dimen>
+    <dimen name="dp_144">144dp</dimen>
+
+    <dimen name="font_size_10">10sp</dimen>
+    <dimen name="font_size_11">11sp</dimen>
+    <dimen name="font_size_12">12sp</dimen>
+    <dimen name="font_size_13">13sp</dimen>
+    <dimen name="font_size_14">14sp</dimen>
+    <dimen name="font_size_15">15sp</dimen>
+    <dimen name="font_size_16">16sp</dimen>
+    <dimen name="font_size_18">18sp</dimen>
+    <dimen name="font_size_20">20sp</dimen>
+    <dimen name="font_size_22">22sp</dimen>
+    <dimen name="font_size_24">24sp</dimen>
+    <dimen name="font_size_26">26sp</dimen>
+    <dimen name="font_size_28">28sp</dimen>
+    <dimen name="font_size_32">32sp</dimen>
+    <dimen name="font_size_38">38sp</dimen>
+    <dimen name="font_size_44">42sp</dimen>
+
+    <dimen name="form_content_padding">32dp</dimen>
+    <dimen name="form_content_padding_top_bottom">12dp</dimen>
+    <dimen name="card_alert_corner_radius">2dp</dimen>
+    <dimen name="card_message_corner_radius">16dp</dimen>
+    <dimen name="font_paragraph_small">10sp</dimen>
+
+    <dimen name="min_height_error_button">60dp</dimen>
+    <dimen name="textinput_edittext_padding_top">30dp</dimen>
+    <dimen name="textinputlayout_boxstroke_disable">0dp</dimen>
+    <dimen name="textinputlayout_paddingStart">-10dp</dimen>
+
+    <dimen name="size_icon_24">24dp</dimen>
+    <dimen name="size_icon_88">88dp</dimen>
+    <dimen name="size_icon_16">16dp</dimen>
+
+    <dimen name="buttons_margin_start_end">48dp</dimen>
+    <dimen name="textinputlayout_paddingTop">-5dp</dimen>
+    <dimen name="size_toolbar">56dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+
+
+</resources>
