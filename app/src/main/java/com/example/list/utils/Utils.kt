@@ -6,7 +6,8 @@ import android.net.NetworkCapabilities
 import android.os.Build
 
 
-class Utils () {
+@Suppress("DEPRECATION")
+class Utils {
 
     fun isConnected(context: Context): Boolean {
         val connectivityManager = context.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
