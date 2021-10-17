@@ -1,7 +1,7 @@
 package com.example.list.di.module
 
 
-import com.example.list.screens.main.MainActivity
+import com.example.list.screens.main.view.MainActivity
 import dagger.Module
 import dagger.android.AndroidInjectionModule
 import dagger.android.ContributesAndroidInjector

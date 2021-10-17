@@ -8,7 +8,7 @@
 
         <variable
             name="viewModel"
-            type="com.example.list.screens.viewmodel.MainViewModel" />
+            type="com.example.list.screens.main.viewmodel.MainViewModel" />
 
         <import type="android.view.View" />
     </data>
@@ -60,19 +60,47 @@
             tools:ignore="SpUsage" />
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rv_history"
+            android:id="@+id/rv_words"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_marginStart="5dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginEnd="5dp"
-            android:paddingBottom="@dimen/dp_52"
+            android:paddingBottom="@dimen/dp_10"
+            android:visibility="@{viewModel.stateError? View.INVISIBLE : View.VISIBLE}"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tv_tittle"
             tools:listitem="@layout/item_list" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_error"
+            app:layout_constraintBottom_toBottomOf="@+id/rv_words"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:visibility="@{viewModel.stateError? View.VISIBLE : View.GONE}"
+            app:layout_constraintTop_toBottomOf="@+id/textField"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/tv_error"
+            style="@style/FontAvenirBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="@{viewModel.stateError? View.VISIBLE : View.GONE}"
+            android:gravity="center"
+            android:text="@string/empty_list"
+            android:textColor="@color/red"
+            android:textSize="@dimen/dp_16"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"
+            tools:ignore="SpUsage" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

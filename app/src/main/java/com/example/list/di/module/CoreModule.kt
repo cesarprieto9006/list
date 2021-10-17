@@ -1,6 +1,7 @@
 package com.example.list.di.module
 
 import com.example.list.network.ApiService
+import com.example.list.utils.SuperAppConstants
 import dagger.Module
 import dagger.Provides
 import hu.akarnokd.rxjava3.retrofit.RxJava3CallAdapterFactory
@@ -23,7 +24,7 @@ class CoreModule {
             .build()
 
         return Retrofit.Builder()
-            .baseUrl("SuperAppConstants.URI")
+            .baseUrl(SuperAppConstants.URI)
             .addConverterFactory(GsonConverterFactory.create())
             .addCallAdapterFactory(RxJava3CallAdapterFactory.create())
             .client(okHttpClient)
