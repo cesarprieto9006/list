@@ -43,7 +43,6 @@ class MainFragment : Fragment() {
     }
 
     private fun setupListener() {
-
         binding.rvWords.run { adapter = mainAdapter }
         mainAdapter.contextViewAdapter(requireContext())
 
@@ -51,23 +50,31 @@ class MainFragment : Fragment() {
             if (Utils().isConnected(requireContext()))
                 viewModel.search(text.toString())
             else
-                Toast.makeText(requireContext(),"Validar la conexion de la red",Toast.LENGTH_SHORT).show()
+                Toast.makeText(
+                    requireContext(),
+                    getString(R.string.network_validate),
+                    Toast.LENGTH_SHORT
+                ).show()
         }
     }
 
     private fun observeLiveData() {
-
         viewModel.arrayMeaningResponse.observe(
             viewLifecycleOwner,
             Observer { result ->
                 when {
-                    result.isNotEmpty() -> {
+                    result.isNotEmpty() && binding.tvSearch.text.toString()!="" -> {
                         mainAdapter.addAll(result[0].lfs)
-                        viewModel.stateError.value=false
+                        viewModel.stateError.value = false
                     }
-                    else -> viewModel.stateError.value=true
+                    else -> viewModel.stateError.value = true
                 }
             })
+
+        viewModel.errorResponse.observe(viewLifecycleOwner, Observer { message ->
+            if (message != null && message != "")
+                Toast.makeText(requireActivity(), message, Toast.LENGTH_LONG).show()
+        })
     }
 
 }

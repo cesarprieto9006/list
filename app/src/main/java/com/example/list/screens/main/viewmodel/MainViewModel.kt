@@ -17,17 +17,26 @@ class MainViewModel @Inject constructor(private val repository: MainRepository) 
     private val _arrayMeaningResponse: MutableLiveData<ResponseMeaning> = MutableLiveData()
     val arrayMeaningResponse: LiveData<ResponseMeaning> get() = _arrayMeaningResponse
 
+    private val _errorResponse: MutableLiveData<String> = MutableLiveData("")
+    val errorResponse: LiveData<String> get() = _errorResponse
+
     var stateError = MutableLiveData(true)
 
+    var isLoading = MutableLiveData(false)
+
     fun search(word: String) {
+        isLoading.value=true
         repository.search(word)
             .subscribeOn(Schedulers.io())
             .observeOn(AndroidSchedulers.mainThread())
             .subscribe({ result ->
                 _arrayMeaningResponse.value=result
+                isLoading.value=false
             }
             ) { error ->
                 Timber.tag(SuperAppConstants.TAG_ERROR).e(error)
+                _errorResponse.value = error.message
+                isLoading.value=false
             }
     }
 }
