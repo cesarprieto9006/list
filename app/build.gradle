@@ -65,7 +65,6 @@ dependencies {
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutines_android_version"
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutines_android_version"
 
-
     //Room
     def room_version = "2.2.5"// Room components
     implementation "androidx.room:room-runtime:$room_version"
@@ -78,14 +77,7 @@ dependencies {
     implementation "androidx.navigation:navigation-ui-ktx:$nav_version"
     implementation "androidx.navigation:navigation-dynamic-features-fragment:$nav_version"
     androidTestImplementation "androidx.navigation:navigation-testing:$nav_version"
-
-    //Glide
-    implementation 'com.github.bumptech.glide:glide:4.11.0'
-    kapt 'com.github.bumptech.glide:compiler:4.11.0'
-
-    //Timber
-    implementation 'com.jakewharton.timber:timber:4.7.1'
-
+    
     // Paging 3
     def pagingVersion = '3.0.0-alpha05'
     implementation "androidx.paging:paging-runtime:$pagingVersion"
@@ -96,10 +88,6 @@ dependencies {
     implementation "com.google.dagger:dagger-android-support:$dagger2_version"
     kapt "com.google.dagger:dagger-android-processor:$dagger2_version"
     kapt "com.google.dagger:dagger-compiler:$dagger2_version"
-
-    //RxJava
-    implementation 'io.reactivex.rxjava3:rxandroid:3.0.0'
-    implementation 'io.reactivex.rxjava3:rxjava:3.0.0'
 
     // Retrofit
     def retrofit="2.9.0"
@@ -112,21 +100,8 @@ dependencies {
     def rxjava = "3.0.0"
     implementation "io.reactivex.rxjava3:rxandroid:$rxjava"
     implementation "io.reactivex.rxjava3:rxjava:$rxjava"
+    implementation "io.reactivex.rxjava3:rxandroid:$rxjava"
+    implementation "io.reactivex.rxjava3:rxjava:$rxjava"
 
-    // v3.4.0 requires >API 24
-    implementation 'com.google.zxing:core:3.3.3'
-    implementation 'com.journeyapps:zxing-android-embedded:3.6.0'
-
-    //fab
-    implementation 'com.nambimobile.widgets:expandable-fab:1.0.2'
-
-    //Mobile Vision
-    implementation 'com.google.mlkit:barcode-scanning:16.1.0'
-
-    // CameraX
-    def camerax_version = "1.0.0-rc01"
-    implementation "androidx.camera:camera-camera2:$camerax_version"
-    implementation "androidx.camera:camera-lifecycle:$camerax_version"
-    implementation "androidx.camera:camera-view:1.0.0-alpha20"
 
 }
